@@ -3,8 +3,10 @@ package com.sdc.factor.common.workflow;
 import com.sdc.factor.common.utils.NULL;
 import lombok.Getter;
 import lombok.Setter;
+import lombok.ToString;
 import lombok.experimental.Accessors;
 
+import java.io.Serializable;
 import java.util.function.Predicate;
 
 /**
@@ -16,7 +18,8 @@ import java.util.function.Predicate;
 @Getter
 @Setter
 @Accessors(chain = true)
-public class WfrAction {
+@ToString
+public class WfrAction implements Serializable {
 
     /** 唯一标示 */
     private Integer id;

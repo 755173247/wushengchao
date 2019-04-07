@@ -2,8 +2,10 @@ package com.sdc.factor.business.vo;
 
 import lombok.Getter;
 import lombok.Setter;
+import lombok.ToString;
 import lombok.experimental.Accessors;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 
 /**
@@ -16,7 +18,8 @@ import java.math.BigDecimal;
 @Getter
 @Setter
 @Accessors(chain = true)
-public class FtsAssetStatVo {
+@ToString
+public class FtsAssetStatVo implements Serializable {
 
     /** 原始条数 */
     private Long rawCount = 0l;

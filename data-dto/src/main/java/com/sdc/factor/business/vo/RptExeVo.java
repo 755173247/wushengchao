@@ -2,6 +2,7 @@ package com.sdc.factor.business.vo;
 
 import com.sdc.factor.business.entity.RptField;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -12,7 +13,7 @@ import java.util.List;
  * @since 2019-03-24
  *
  */
-public class RptExeVo {
+public class RptExeVo implements Serializable {
 
     /** 执行结果的表头信息 */
     private final List<RptField> heads = new ArrayList<>();

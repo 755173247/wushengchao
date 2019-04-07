@@ -4,6 +4,7 @@ package com.sdc.factor.business.entity;
 import com.sdc.factor.common.entity.BaseModel;
 import lombok.Getter;
 import lombok.Setter;
+import lombok.ToString;
 import lombok.experimental.Accessors;
 
 import javax.persistence.*;
@@ -20,6 +21,7 @@ import javax.persistence.*;
 @Accessors(chain = true)
 @Entity
 @Table
+@ToString
 public class FtsRefinOrg extends BaseModel {
 
     @Id

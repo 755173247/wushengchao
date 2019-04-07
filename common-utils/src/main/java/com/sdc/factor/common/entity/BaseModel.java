@@ -3,10 +3,10 @@ package com.sdc.factor.common.entity;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.experimental.Accessors;
-import org.apache.commons.lang3.builder.ToStringBuilder;
 
 import javax.persistence.Column;
 import javax.persistence.MappedSuperclass;
+import javax.persistence.PreUpdate;
 import javax.persistence.Transient;
 import java.util.Date;
 
@@ -64,6 +64,7 @@ public class BaseModel implements java.io.Serializable {
     /**
      * 在保存实体之前，完成对通用字段值的设置操作
      */
+    @PreUpdate
     public void beforeSave() {
         Date now = new Date();
         if (createTime == null) {
@@ -80,10 +81,5 @@ public class BaseModel implements java.io.Serializable {
         if (enabled == null) {
             enabled = true;
         }
-    }
-
-    @Override
-    public String toString() {
-        return ToStringBuilder.reflectionToString(this);
     }
 }

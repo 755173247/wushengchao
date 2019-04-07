@@ -3,6 +3,7 @@ package com.sdc.factor.business.entity;
 import com.sdc.factor.common.entity.BaseModel;
 import lombok.Getter;
 import lombok.Setter;
+import lombok.ToString;
 import lombok.experimental.Accessors;
 import org.apache.commons.lang3.StringUtils;
 
@@ -22,6 +23,7 @@ import java.util.stream.Stream;
 @Setter
 @Accessors(chain = true)
 @MappedSuperclass
+@ToString
 public class FtsProdAttrBase extends BaseModel {
 
     /** 要素类型 */

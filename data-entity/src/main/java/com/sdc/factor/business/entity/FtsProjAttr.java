@@ -2,6 +2,7 @@ package com.sdc.factor.business.entity;
 
 import lombok.Getter;
 import lombok.Setter;
+import lombok.ToString;
 import lombok.experimental.Accessors;
 
 import javax.persistence.*;
@@ -18,6 +19,7 @@ import javax.persistence.*;
 @Accessors(chain = true)
 @Entity
 @Table(indexes = { @Index(columnList = "projId") })
+@ToString
 public class FtsProjAttr extends FtsProdAttrBase {
 
     @Id

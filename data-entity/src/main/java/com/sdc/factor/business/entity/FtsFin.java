@@ -4,6 +4,7 @@ import com.sdc.factor.common.annotations.ContractVar;
 import com.sdc.factor.common.entity.BaseModel;
 import lombok.Getter;
 import lombok.Setter;
+import lombok.ToString;
 import lombok.experimental.Accessors;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
@@ -25,6 +26,7 @@ import java.util.List;
 @Accessors(chain = true)
 @Entity
 @Table(indexes = { @Index(columnList = "projId"), @Index(columnList = "assetId", unique = true) })
+@ToString
 public class FtsFin extends BaseModel {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(FtsFin.class);

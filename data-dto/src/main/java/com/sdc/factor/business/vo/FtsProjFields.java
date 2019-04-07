@@ -4,12 +4,14 @@ import com.sdc.factor.business.entity.FtsProj;
 import com.sdc.factor.common.utils.NULL;
 import lombok.Getter;
 import lombok.Setter;
+import lombok.ToString;
 import lombok.experimental.Accessors;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.util.ReflectionUtils;
 
+import java.io.Serializable;
 import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.List;
@@ -19,7 +21,8 @@ import java.util.stream.Stream;
 @Getter
 @Setter
 @Accessors(chain = true)
-public class FtsProjFields {
+@ToString
+public class FtsProjFields implements Serializable {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(FtsProjFields.class);
 

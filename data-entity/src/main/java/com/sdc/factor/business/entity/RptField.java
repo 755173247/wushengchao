@@ -3,6 +3,7 @@ package com.sdc.factor.business.entity;
 import com.sdc.factor.common.entity.BaseModel;
 import lombok.Getter;
 import lombok.Setter;
+import lombok.ToString;
 import lombok.experimental.Accessors;
 import org.apache.commons.lang3.StringUtils;
 
@@ -19,6 +20,7 @@ import javax.persistence.*;
 @Accessors(chain = true)
 @Entity
 @Table(indexes = { @Index(columnList = "infoId") })
+@ToString
 public class RptField extends BaseModel {
 
     @Id

@@ -4,6 +4,7 @@ import com.sdc.factor.common.annotations.ContractVar;
 import com.sdc.factor.common.entity.BaseModel;
 import lombok.Getter;
 import lombok.Setter;
+import lombok.ToString;
 import lombok.experimental.Accessors;
 
 import javax.persistence.*;
@@ -22,6 +23,7 @@ import java.util.List;
 @Accessors(chain = true)
 @Entity
 @Table
+@ToString
 public class FtsProj extends BaseModel {
 
     /**

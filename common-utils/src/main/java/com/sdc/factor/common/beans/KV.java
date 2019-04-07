@@ -1,5 +1,9 @@
 package com.sdc.factor.common.beans;
 
+import lombok.ToString;
+
+import java.io.Serializable;
+
 /**
  * 简单键值对
  * 
@@ -7,7 +11,8 @@ package com.sdc.factor.common.beans;
  * @since 2019-03-24
  *
  */
-public class KV {
+@ToString
+public class KV implements Serializable {
 
     private String k;
 

@@ -5,6 +5,7 @@ import com.sdc.factor.common.beans.KV;
 import com.sdc.factor.common.entity.BaseModel;
 import lombok.Getter;
 import lombok.Setter;
+import lombok.ToString;
 import lombok.experimental.Accessors;
 import org.apache.commons.lang3.StringUtils;
 
@@ -22,6 +23,7 @@ import java.util.List;
 @Accessors(chain = true)
 @Entity
 @Table
+@ToString
 public class AppNoticeTmpl extends BaseModel {
 
     /** 模版类型、应用场景 */

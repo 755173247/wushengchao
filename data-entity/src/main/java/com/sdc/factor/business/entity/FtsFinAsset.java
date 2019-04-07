@@ -3,6 +3,7 @@ package com.sdc.factor.business.entity;
 import com.sdc.factor.common.entity.BaseModel;
 import lombok.Getter;
 import lombok.Setter;
+import lombok.ToString;
 import lombok.experimental.Accessors;
 
 import javax.persistence.*;
@@ -21,6 +22,7 @@ import java.math.BigDecimal;
 @Accessors(chain = true)
 @Entity
 @Table(indexes = { @Index(columnList = "projId") })
+@ToString
 public class FtsFinAsset extends BaseModel {
 
     @Id

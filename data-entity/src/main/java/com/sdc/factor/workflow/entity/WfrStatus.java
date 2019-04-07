@@ -6,6 +6,7 @@ import com.sdc.factor.common.utils.JsonUtils;
 import com.sdc.factor.common.workflow.WfrMiscTypes;
 import lombok.Getter;
 import lombok.Setter;
+import lombok.ToString;
 import lombok.experimental.Accessors;
 import org.apache.commons.lang3.StringUtils;
 
@@ -24,6 +25,7 @@ import java.util.function.Predicate;
 @Accessors(chain = true)
 @Entity
 @Table(indexes = { @Index(columnList = "statusCode,flowType", unique = true), @Index(columnList = "flowType") })
+@ToString
 public class WfrStatus extends BaseModel {
 
     @Id

@@ -3,6 +3,7 @@ package com.sdc.factor.business.entity;
 import com.sdc.factor.common.entity.BaseModel;
 import lombok.Getter;
 import lombok.Setter;
+import lombok.ToString;
 import lombok.experimental.Accessors;
 
 import javax.persistence.*;
@@ -20,6 +21,7 @@ import java.util.Date;
 @Entity
 @Table(indexes = { @Index(columnList = "mobile", unique = true), @Index(columnList = "mail", unique = true),
         @Index(columnList = "invCode", unique = true) })
+@ToString
 public class FtsUser extends BaseModel {
 
     @Id

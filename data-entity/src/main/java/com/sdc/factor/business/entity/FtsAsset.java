@@ -6,6 +6,7 @@ import com.sdc.factor.common.utils.DATE;
 import com.sdc.factor.common.utils.NULL;
 import lombok.Getter;
 import lombok.Setter;
+import lombok.ToString;
 import lombok.experimental.Accessors;
 import org.apache.commons.codec.digest.DigestUtils;
 import org.apache.commons.lang3.StringUtils;
@@ -31,6 +32,7 @@ import java.util.function.Function;
 @Accessors(chain = true)
 @Entity
 @Table(indexes = { @Index(columnList = "projId"), @Index(columnList = "finId"), @Index(columnList = "sha256") })
+@ToString
 @SuppressWarnings("serial")
 public class FtsAsset extends BaseModel {
 
