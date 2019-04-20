@@ -8,9 +8,18 @@ package com.sdc.factor.common.enums;
  */
 public enum SysUserType implements IEnum<String> {
 
-    CLIENT("client"), //客户，主要指使用app的用户
-    OPERATOR("operator"), //运营者，指使用运营管理平台的用户
-    SYSTEM("system"); //系统，第三方系统调用者
+    /**
+     * 客户，主要指使用app的用户
+     */
+    CLIENT("client"),
+    /**
+     * 运营者，指使用运营管理平台的用户
+     */
+    OPERATOR("operator"),
+    /**
+     * 系统，第三方系统调用者
+     */
+    SYSTEM("system");
 
     private String code;
 

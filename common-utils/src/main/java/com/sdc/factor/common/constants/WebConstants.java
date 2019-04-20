@@ -38,17 +38,17 @@ public interface WebConstants {
     /**
      * 金额数据与前端交互换算比例，请求的参数需要乘以此比例，返回的数据除以
      */
-    BigDecimal AMOUNT_CONVERSION_RATIO = BigDecimal.ONE;
+    BigDecimal AMOUNT_CONVERSION_RATIO = new BigDecimal(100);
 
     /**
      * 请求头时间戳
      */
-    String LPR_TIMESTAMP_HEADER = "LPXH-TIMESTAMP";
+    String LPR_TIMESTAMP_HEADER = "SDC-TIMESTAMP";
 
     /**
      * 请求头签名
      */
-    String LPR_SIGNATURE_HEADER = "LPXH-SIGNATURE";
+    String LPR_SIGNATURE_HEADER = "SDC-SIGNATURE";
 
     /**
      * Query传参时间戳
@@ -74,11 +74,6 @@ public interface WebConstants {
      * Request域内的当前请求参数对象
      */
     String REQUEST_SCOPE_BODY_PARAM = "body_param";
-
-    /**
-     * cookie中的客户端标志位，任何接口响应前检查request中是否存在client_key是否存在值，如果不存在则返回一个client_key
-     */
-    String COOKIE_CLIENT_KEY = "lpxh_client_key";
 
     /**
      * 请求级别防止重复提交的key

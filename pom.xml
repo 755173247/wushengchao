@@ -21,6 +21,7 @@
     <module>data-entity</module>
     <module>data-dto</module>
     <module>data-repository</module>
+    <module>module-thirdparty</module>
   </modules>
 
   <!-- 属性配置 -->
@@ -39,6 +40,7 @@
     <com.sdc.factor.data-entity.version>1.0.0-SNAPSHOT</com.sdc.factor.data-entity.version>
     <com.sdc.factor.data-dto.version>1.0.0-SNAPSHOT</com.sdc.factor.data-dto.version>
     <com.sdc.factor.data-repository.version>1.0.0-SNAPSHOT</com.sdc.factor.data-repository.version>
+    <com.sdc.factor.thirdparty.invoice-cloud-service.version>1.0.0-SNAPSHOT</com.sdc.factor.thirdparty.invoice-cloud-service.version>
   </properties>
 
 

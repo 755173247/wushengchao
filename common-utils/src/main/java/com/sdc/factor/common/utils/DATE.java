@@ -19,6 +19,7 @@ public final class DATE {
 
     private static ThreadLocal<Calendar> calInstance = new ThreadLocal<Calendar>() {
 
+        @Override
         protected Calendar initialValue() {
             return Calendar.getInstance();
         }
@@ -32,8 +33,9 @@ public final class DATE {
      * @return
      */
     public static Date addDay(Date date, int day) {
-        if (date == null)
+        if (date == null) {
             return null;
+        }
 
         Calendar calendar = calInstance.get();
         calendar.setTime(date);
@@ -60,8 +62,9 @@ public final class DATE {
      * @return
      */
     public static Date addSecond(Date date, int seconds) {
-        if (date == null)
+        if (date == null) {
             return null;
+        }
 
         Calendar calendar = calInstance.get();
         calendar.setTime(date);

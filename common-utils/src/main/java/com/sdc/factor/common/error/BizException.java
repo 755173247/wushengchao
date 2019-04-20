@@ -14,10 +14,14 @@ import java.util.List;
  */
 public class BizException extends RuntimeException {
 
-    //common error code
+    /**
+     * common error code
+     */
     private int code;
 
-    //message params for the placeholders defined in the message
+    /**
+     * message params for the placeholders defined in the message
+     */
     private List<Object> messageParams = new ArrayList<>();
 
     /**

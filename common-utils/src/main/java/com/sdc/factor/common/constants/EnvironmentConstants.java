@@ -8,18 +8,28 @@ package com.sdc.factor.common.constants;
  */
 public interface EnvironmentConstants {
 
-    //生产环境
+    /**
+     * 生产环境
+     */
     String PROD = "prod";
 
-    //测试环境
+    /**
+     * 测试环境
+     */
     String TEST = "test";
 
-    //开发环境
+    /**
+     * 开发环境
+     */
     String DEV = "dev";
 
-    //受限测试环境、准生产环境
+    /**
+     * 受限测试环境、准生产环境
+     */
     String STAGING = "staging";
 
-    //支持的环境列表
+    /**
+     * 支持的环境列表
+     */
     String[] ENVIRONMENTS = new String[]{DEV, TEST, STAGING, PROD};
 }

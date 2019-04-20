@@ -24,26 +24,26 @@ public class RestResponse<T> implements Serializable {
 
     public static final int BIZ_FAIL = 999999;
 
-    //响应编码
+    /**
+     * 响应编码
+     */
     @ApiModelProperty(value = "业务处理结果编码", required = true, dataType = "int")
     private int code = BIZ_OK;
 
-    //响应描述
+    /**
+     * 响应描述
+     */
     @ApiModelProperty(value = "业务处理结果描述", required = true, dataType = "string")
     private String msg = "ok";
 
-    //业务数据
+    /**
+     * 业务数据
+     */
     @ApiModelProperty(value = "业务数据", required = false, dataType = "object")
     private T data = null;
 
     @ApiModelProperty(value = "分页信息", required = false, dataType = "object")
     private Pagination pagination = null;
-
-    @ApiModelProperty(value = "数据字典，如果返回的业务数据中包含数据字典的类型，则需要返回数据字典中各种状态数据对应的语言下的描述", required = false, dataType = "object")
-    private Map<String, Object> dict;
-
-    @ApiModelProperty(value = "数据字典版本", required = false, dataType = "string")
-    private String dataVersion;
 
     public RestResponse<T> setData(T data) {
         this.data = data;
@@ -58,13 +58,6 @@ public class RestResponse<T> implements Serializable {
     public RestResponse<T> setMsg(String msg) {
         if (StringUtils.isNotBlank(msg)) {
             this.msg = msg;
-        }
-        return this;
-    }
-
-    public RestResponse<T> setDict(Map<String, Object> dict) {
-        if (dict != null) {
-            this.dict = dict;
         }
         return this;
     }
@@ -118,14 +111,5 @@ public class RestResponse<T> implements Serializable {
 
     public static RestResponse error(int code, String message) {
         return new RestResponse().setCode(code).setMsg(StringUtils.isNotBlank(message) ? message : HttpContextUtils.getMessage(code));
-    }
-
-    public String getDataVersion() {
-        return dataVersion;
-    }
-
-    public RestResponse<T> setDataVersion(String dataVersion) {
-        this.dataVersion = dataVersion;
-        return this;
     }
 }
