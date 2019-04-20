@@ -14,6 +14,12 @@ import javax.servlet.http.HttpServletRequest;
 import java.util.Locale;
 import java.util.stream.Stream;
 
+/**
+ * Http请求上下文相关帮助方法
+ *
+ * @author Sean
+ * @since 2019-04-20
+ */
 public class HttpContextUtils {
 
 	private static final Logger LOGGER = LoggerFactory.getLogger(HttpContextUtils.class);
@@ -95,9 +101,9 @@ public class HttpContextUtils {
 		if (request == null) {
 			return null;
 		} else {
-			Locale locale = (Locale) request.getAttribute(WebConstants.LPR_LANGUAGE_PARAM);
+			Locale locale = (Locale) request.getAttribute(WebConstants.SDC_LANGUAGE_PARAM);
 			if (locale == null) {
-				String language = request.getParameter(WebConstants.LPR_LANGUAGE_PARAM);
+				String language = request.getParameter(WebConstants.SDC_LANGUAGE_PARAM);
 				if (StringUtils.isNotBlank(language)) {
 					String country = "";
 					int dash = language.indexOf('-');
@@ -112,7 +118,7 @@ public class HttpContextUtils {
 				if (locale == null) {
 					locale = RequestContextUtils.getLocale(request);
 				}
-				request.setAttribute(WebConstants.LPR_LANGUAGE_PARAM, locale);
+				request.setAttribute(WebConstants.SDC_LANGUAGE_PARAM, locale);
 				return locale;
 			} else {
 				return locale;

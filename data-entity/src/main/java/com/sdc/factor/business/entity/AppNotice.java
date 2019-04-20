@@ -1,7 +1,7 @@
 package com.sdc.factor.business.entity;
 
 
-import com.sdc.factor.common.entity.BaseModel;
+import com.sdc.factor.base.entity.BaseModel;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
@@ -25,7 +25,14 @@ public class AppNotice extends BaseModel {
 
     /** 消息类型 */
     public enum AppNoticeType {
-        EMAIL, SMS
+        /**
+         * 邮件通知
+         */
+        EMAIL,
+        /**
+         * 短信通知
+         */
+        SMS
     }
 
     /** 消息状态 */

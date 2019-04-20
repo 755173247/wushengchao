@@ -14,6 +14,8 @@ public interface IEnum<T extends Serializable> {
 
     /**
      * 枚举数据库存储值
+     *
+     * @return 返回枚举类型的实际值
      */
     T getValue();
 

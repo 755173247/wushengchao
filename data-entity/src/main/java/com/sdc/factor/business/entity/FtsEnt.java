@@ -1,7 +1,7 @@
 package com.sdc.factor.business.entity;
 
 import com.sdc.factor.common.annotations.ContractVar;
-import com.sdc.factor.common.entity.BaseModel;
+import com.sdc.factor.base.entity.BaseModel;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
@@ -233,17 +233,20 @@ public class FtsEnt extends BaseModel {
     private String adminIdNo;
 
     /** 企业联系人 */
-    private String ContactsName;
+    @Column(name = "ContactsName")
+    private String contactsName;
 
     /** 联系人电话 */
-    private String ContactsMobie;
+    @Column(name = "ContactsMobie")
+    private String contactsMobie;
 
     /** 联系人邮箱 */
-    private String ContactsMail;
+    @Column(name = "ContactsMail")
+    private String contactsMail;
 
     /** 企业类型查询 */
     @Transient
-    private List<FtsEntType> TypeList;
+    private List<FtsEntType> typeList;
 
     /** 项目Id，仅企业信息查询 */
     @Transient

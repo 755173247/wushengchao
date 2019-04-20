@@ -43,27 +43,27 @@ public interface WebConstants {
     /**
      * 请求头时间戳
      */
-    String LPR_TIMESTAMP_HEADER = "SDC-TIMESTAMP";
+    String SDC_TIMESTAMP_HEADER = "SDC-TIMESTAMP";
 
     /**
      * 请求头签名
      */
-    String LPR_SIGNATURE_HEADER = "SDC-SIGNATURE";
+    String SDC_SIGNATURE_HEADER = "SDC-SIGNATURE";
 
     /**
      * Query传参时间戳
      */
-    String LPR_TIMESTAMP_PARAM = "_ts";
+    String SDC_TIMESTAMP_PARAM = "_ts";
 
     /**
      * Query传参签名
      */
-    String LPR_SIGNATURE_PARAM = "_signature";
+    String SDC_SIGNATURE_PARAM = "_signature";
 
     /**
      * Query传参语言
      */
-    String LPR_LANGUAGE_PARAM = "language";
+    String SDC_LANGUAGE_PARAM = "language";
 
     /**
      * Request域内的当前用户参数名

@@ -15,6 +15,9 @@ import java.util.Map;
  * 接口返回数据的结构定义
  * 业务数据对象必须是标准的java bean，包含所有可序列化字段的getter和setter方法
  *
+ * @author Sean
+ * @since 2019-04-20
+ *
  * @param <T> 业务数据的数据类型
  */
 @ApiModel(value = "接口响应")

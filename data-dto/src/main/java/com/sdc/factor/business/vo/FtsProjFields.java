@@ -18,6 +18,12 @@ import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
+/**
+ * 项目字段
+ *
+ * @author Sean
+ * @since 2019-04-20
+ */
 @Getter
 @Setter
 @Accessors(chain = true)

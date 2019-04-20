@@ -1,7 +1,7 @@
 package com.sdc.factor.workflow.entity;
 
 import com.sdc.factor.common.beans.KV;
-import com.sdc.factor.common.entity.BaseModel;
+import com.sdc.factor.base.entity.BaseModel;
 import com.sdc.factor.common.utils.JsonUtils;
 import com.sdc.factor.common.workflow.WfrMiscTypes;
 import lombok.Getter;

@@ -80,8 +80,9 @@ public final class DATE {
      * @return
      */
     public static Date addMin(Date date, int minutes) {
-        if (date == null)
+        if (date == null) {
             return null;
+        }
 
         Calendar calendar = calInstance.get();
         calendar.setTime(date);
@@ -97,8 +98,9 @@ public final class DATE {
      * @return
      */
     public static Date addHour(Date date, int hours) {
-        if (date == null)
+        if (date == null) {
             return null;
+        }
 
         Calendar calendar = calInstance.get();
         calendar.setTime(date);
@@ -261,8 +263,9 @@ public final class DATE {
      * @return
      */
     public static Date addMonth(Date date, int month) {
-        if (date == null)
+        if (date == null) {
             return null;
+        }
 
         Calendar calendar = calInstance.get();
         calendar.setTime(date);
@@ -278,8 +281,9 @@ public final class DATE {
      * @return
      */
     public static Date addYear(Date date, int year) {
-        if (date == null)
+        if (date == null) {
             return null;
+        }
 
         Calendar calendar = calInstance.get();
         calendar.setTime(date);
@@ -294,8 +298,9 @@ public final class DATE {
      * @return 只留年月日的日期
      */
     public static Date clearTime(Date date) {
-        if (date == null)
+        if (date == null) {
             return null;
+        }
 
         Calendar calendar = calInstance.get();
         calendar.setTime(date);
@@ -373,8 +378,9 @@ public final class DATE {
      * @return
      */
     public static String dateToStr(Date date, String pattern) {
-        if (date == null || pattern == null)
+        if (date == null || pattern == null) {
             return null;
+        }
 
         SimpleDateFormat sdf = new SimpleDateFormat(pattern);
         return sdf.format(date);
@@ -388,8 +394,9 @@ public final class DATE {
      * @return
      */
     public static Date strToDate(String date, String pattern) {
-        if (date == null || pattern == null)
+        if (date == null || pattern == null) {
             return null;
+        }
 
         SimpleDateFormat sdf = new SimpleDateFormat(pattern);
         try {

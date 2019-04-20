@@ -39,7 +39,7 @@ public final class NULL {
     }
 
     public static long nvl(Long oldValue) {
-        return nvl(oldValue, 0l);
+        return nvl(oldValue, 0L);
     }
 
     public static long nvl(Long oldValue, long defaultValue) {

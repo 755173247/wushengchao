@@ -1,7 +1,7 @@
 package com.sdc.factor.business.entity;
 
 import com.sdc.factor.common.annotations.ContractVar;
-import com.sdc.factor.common.entity.BaseModel;
+import com.sdc.factor.base.entity.BaseModel;
 import com.sdc.factor.common.utils.DATE;
 import com.sdc.factor.common.utils.NULL;
 import lombok.Getter;

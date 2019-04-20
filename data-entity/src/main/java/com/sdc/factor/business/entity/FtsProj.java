@@ -1,7 +1,7 @@
 package com.sdc.factor.business.entity;
 
 import com.sdc.factor.common.annotations.ContractVar;
-import com.sdc.factor.common.entity.BaseModel;
+import com.sdc.factor.base.entity.BaseModel;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
@@ -107,7 +107,10 @@ public class FtsProj extends BaseModel {
         }
     }
 
-    // 判断状态信息的颜色(根据枚举类型进行验证)
+    /**
+     * 判断状态信息的颜色(根据枚举类型进行验证)
+     * @return
+     */
     public String getProjBadge() {
         if (projStatus == FtsProjStatus.DRAFT) {
             return "badge-draft";

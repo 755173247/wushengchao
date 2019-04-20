@@ -34,12 +34,12 @@ public class FtsContractVars {
 
     }
 
-    public static final List<KV> commonVars = initCommonVars();
+    public static final List<KV> COMMON_VARS = initCommonVars();
 
-    public static final List<KV> projVars = unmodifiableList(initVars(FtsProj.class, "p."));
+    public static final List<KV> PROJ_VARS = unmodifiableList(initVars(FtsProj.class, "p."));
 
     /** [[tr]]表示找到xml文档中，父tr节点并做循环；${[[tr]]a.buyerName} */
-    public static final List<KV> assetVars = assetVars();
+    public static final List<KV> ASSET_VARS = assetVars();
 
     private static FtsContractVars tmpl = null;
 
@@ -106,7 +106,7 @@ public class FtsContractVars {
      * @param varMap
      */
     public static void commonVarValueTo(Map<String, Object> varMap, String contractNum) {
-        for (KV v : commonVars) {
+        for (KV v : COMMON_VARS) {
             varMap.put(v.getK(), ((Var) v).fnValue.apply(contractNum));
         }
     }
