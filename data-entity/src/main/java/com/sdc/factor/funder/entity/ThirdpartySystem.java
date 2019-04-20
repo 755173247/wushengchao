@@ -61,10 +61,4 @@ public class ThirdpartySystem extends BaseModel {
      */
     @Column(name = "app_secret", nullable = false, length = 128)
     private String appSecret;
-
-    /**
-     * 第三方系统调用是否被禁止
-     */
-    @Column(name = "is_disabled", nullable = false, length = 2, columnDefinition = "default 0 comment '是否被禁用'")
-    private Boolean isDisabled;
 }

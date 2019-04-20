@@ -8,3 +8,5 @@
 target
 out
 gen
+log
+*.log
