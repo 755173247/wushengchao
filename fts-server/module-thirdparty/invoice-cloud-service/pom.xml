@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>module-thirdparty</artifactId>
+        <groupId>com.sdc.factor</groupId>
+        <version>1.0.0-SNAPSHOT</version>
+        <relativePath>../</relativePath>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>invoice-cloud-service</artifactId>
+    <packaging>pom</packaging>
+    <name>invoice-cloud-service</name>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.sdc.factor</groupId>
+            <artifactId>data-dto</artifactId>
+            <version>${com.sdc.factor.data-dto.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.sdc.factor</groupId>
+            <artifactId>common-utils</artifactId>
+            <version>${com.sdc.factor.common-utils.version}</version>
+        </dependency>
+    </dependencies>
+
+
+</project>
